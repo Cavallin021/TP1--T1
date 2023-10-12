@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1697144656 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\dominios.cpp
+	"dominios.h"
+	"regex"
+
+1697142889 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\dominios.h
+	<stdexcept>
+
+1697133360 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\entidades.cpp
+	"entidades.h"
+
+1697135030 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\entidades.h
+	"dominios.h"
+	<string>
+
+1697142985 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\main.cpp
+	<iostream>
+	"dominios.h"
+	"entidades.h"
+	"testes.h"
+
+1697144940 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\testes.h
+	"dominios.h"
+	"entidades.h"
+
+1697143086 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\testes.cpp
+	"testes.h"
+
