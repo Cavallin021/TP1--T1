@@ -42,4 +42,22 @@ int main(){
         case TUSenha::FALHA  : cout << "FALHA" << endl;
                                 break;
     }
+
+    TUColuna teste_coluna;
+
+    switch(teste_coluna.run()){
+        case TUColuna::SUCESSO: cout << "SUCESSO" << endl;
+                                break;
+        case TUCodigo::FALHA  : cout << "FALHA" << endl;
+                                break;
+    }
+
+    TUTexto teste_texto;
+
+    switch(teste_texto.run()){
+        case TUTexto::SUCESSO: cout << "SUCESSO" << endl;
+                                break;
+        case TUTexto::FALHA  : cout << "FALHA" << endl;
+                                break;
+    }
 };

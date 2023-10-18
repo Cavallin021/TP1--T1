@@ -32,7 +32,7 @@ void TULimite::testarCenarioFalha(){
 }
 
 int TULimite::run(){
-    printf("limite\n");
+    printf("Teste do Limite:\n");
     setUp();
     testarCenarioSucesso();
     testarCenarioFalha();
@@ -72,7 +72,7 @@ void TUCodigo::testarCenarioFalha(){
 }
 
 int TUCodigo::run(){
-    printf("codigo\n");
+    printf("Teste do Codigo:\n");
     setUp();
     testarCenarioSucesso();
     testarCenarioFalha();
@@ -112,7 +112,7 @@ void TUEmail::testarCenarioFalha(){
 }
 
 int TUEmail::run(){
-    printf("Email\n");
+    printf("Teste do Email:\n");
     setUp();
     testarCenarioSucesso();
     testarCenarioFalha();
@@ -152,7 +152,85 @@ void TUSenha::testarCenarioFalha(){
 }
 
 int TUSenha::run(){
-    printf("Senha\n");
+    printf("Teste da Senha:\n");
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+};
+
+void TUColuna::setUp(){
+    coluna = new Coluna();
+    estado = SUCESSO;
+}
+
+void TUColuna::tearDown(){
+    delete coluna;
+}
+
+void TUColuna::testarCenarioSucesso(){
+    try{
+        coluna->setColuna(VALOR_VALIDO);
+        if (coluna->getColuna() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUColuna::testarCenarioFalha(){
+    try{
+        coluna->setColuna(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (coluna->getColuna() == VALOR_INVALIDO)
+            estado = FALHA;
+    }
+}
+
+int TUColuna::run(){
+    printf("Teste da Coluna:\n");
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+};
+
+void TUTexto::setUp(){
+    texto = new Texto();
+    estado = SUCESSO;
+}
+
+void TUTexto::tearDown(){
+    delete texto;
+}
+
+void TUTexto::testarCenarioSucesso(){
+    try{
+        texto->setTexto(VALOR_VALIDO);
+        if (texto->getTexto() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUTexto::testarCenarioFalha(){
+    try{
+        texto->setTexto(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (texto->getTexto() == VALOR_INVALIDO)
+            estado = FALHA;
+    }
+}
+
+int TUTexto::run(){
+    printf("Teste do Texto:\n");
     setUp();
     testarCenarioSucesso();
     testarCenarioFalha();

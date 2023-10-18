@@ -88,3 +88,50 @@ void Senha::setSenha(string senha){
 string Senha::getSenha() const {
     return senha;
 };
+
+void Coluna::validar(string coluna){
+    if (coluna != "SOLICITADO" && coluna != "EM EXECUCAO" && coluna != "CONCLUIDO")
+        throw invalid_argument("Argumento invalido.");
+};
+
+void Coluna::setColuna(string coluna){
+    validar(coluna);
+    this->coluna = coluna;
+};
+string Coluna::getColuna() const {
+    return coluna;
+};
+
+void Texto::validar(string texto){
+     string caracteres_proibidos = "áéíóúàèìòùãõ";
+        if (texto.empty() || texto.length() > 30 || texto.length() < 5) {
+            throw invalid_argument("Argumento inválido.");
+        }
+        if (!isupper(texto[0])){
+            throw invalid_argument("Argumento inválido.");
+          };
+        for (int i = 0; i < texto.length() - 1; i++) {
+            if (isspace(texto[i]) && isspace(texto[i + 1])) {
+                throw invalid_argument("Argumento inválido.");
+            }
+            if (ispunct(texto[i]) && ispunct(texto[i + 1])) {
+                throw invalid_argument("Argumento inválido.");
+            }
+            if (ispunct(texto[i]) && texto[i] != ',' && texto[i] != ';' && !isupper(texto[i + 1])) {
+                throw invalid_argument("Argumento inválido.");
+            }
+            for (int j = 0; j < caracteres_proibidos.length(); j++) {
+                if (texto[i] == caracteres_proibidos[j]) {
+                    throw invalid_argument("Argumento inválido.");
+                }
+            }
+        }
+};
+
+void Texto::setTexto(string texto){
+    validar(texto);
+    this->texto = texto;
+};
+string Texto::getTexto() const {
+    return texto;
+};

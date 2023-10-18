@@ -40,4 +40,22 @@ class Senha{
         void setSenha(string);
         string getSenha() const;
 };
+
+class Coluna{
+    private:
+        string coluna;
+        void validar(string);
+    public:
+        void setColuna(string);
+        string getColuna() const;
+};
+
+class Texto{
+    private:
+        string texto;
+        void validar(string);
+    public:
+        void setTexto(string);
+        string getTexto() const;
+};
 #endif

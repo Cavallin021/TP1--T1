@@ -73,4 +73,38 @@ public:
     const static int FALHA   = -1;
     int run();
 };
+
+class TUColuna {
+private:
+    const string VALOR_VALIDO   = "EM EXECUCAO";
+    const string VALOR_INVALIDO = "QUALQUER STRING DIFERENTE DAS 3";
+    Coluna *coluna;
+    int estado;
+    void setUp();
+    void tearDown();
+    void testarCenarioSucesso();
+    void testarCenarioFalha();
+
+public:
+    const static int SUCESSO =  0;
+    const static int FALHA   = -1;
+    int run();
+};
+
+class TUTexto {
+private:
+    const string VALOR_VALIDO   = "Ddasdadeexto";
+    const string VALOR_INVALIDO = "Ddasdadéexto";
+    Texto *texto;
+    int estado;
+    void setUp();
+    void tearDown();
+    void testarCenarioSucesso();
+    void testarCenarioFalha();
+
+public:
+    const static int SUCESSO =  0;
+    const static int FALHA   = -1;
+    int run();
+};
 #endif
