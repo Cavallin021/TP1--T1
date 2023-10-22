@@ -36,7 +36,7 @@ string Codigo::getLLDD() const {
 };
 
 void Email::validar(string email){
-     regex email_pattern("^[a-zA-Z0-9]{2,10}@[a-zA-Z0-9]{2,20}(\\.[a-zA-Z0-9]{2,20})+$");
+     regex email_pattern("^(?!.*\\.@)[a-zA-Z0-9.]{2,10}@[a-zA-Z0-9.]{2,20}$");
      if (!regex_match(email, email_pattern)) {
           throw invalid_argument("Argumento invalido.");
 };
@@ -55,6 +55,7 @@ void Senha::validar(string senha){
           throw invalid_argument("Argumento invalido.");
      };
      bool maiuscula = false, minuscula=false,digito=false,especial=false,duplicado=false;
+     string caracteres_de_pontuacao = ".;?,!";
      for (int i=0;i<senha.length();i++){
        if(isupper(senha[i])){
           maiuscula = true;
@@ -65,7 +66,7 @@ void Senha::validar(string senha){
        else if(isdigit(senha[i])){
           digito = true;
        }
-       else{
+       else if(caracteres_de_pontuacao.find(senha[i]) != string::npos){
          especial = true;
        };
 

@@ -42,8 +42,8 @@ public:
 
 class TUEmail {
 private:
-    const string VALOR_VALIDO   = "joao@gmail.com";
-    const string VALOR_INVALIDO = "joaovictor@.gmail.com";
+    const string VALOR_VALIDO   = "user@example.com";
+    const string VALOR_INVALIDO = "user.@example.com";
     Email *email;
     int estado;
     void setUp();
@@ -60,7 +60,7 @@ public:
 class TUSenha {
 private:
     const string VALOR_VALIDO   = "Jkj9.";
-    const string VALOR_INVALIDO = "JJ79.";
+    const string VALOR_INVALIDO = "Jk79$";
     Senha *senha;
     int estado;
     void setUp();

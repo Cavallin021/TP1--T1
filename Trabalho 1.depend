@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1697589896 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\dominios.cpp
+1697993548 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\dominios.cpp
 	"dominios.h"
 	"regex"
 
@@ -19,10 +19,10 @@
 	"entidades.h"
 	"testes.h"
 
-1697589933 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\testes.h
+1697993581 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\testes.h
 	"dominios.h"
 	"entidades.h"
 
-1697587526 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\testes.cpp
+1697590105 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1\testes.cpp
 	"testes.h"
 
