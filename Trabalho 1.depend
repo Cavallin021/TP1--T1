@@ -33,3 +33,50 @@
 1697585644 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\dominios.h
 	<stdexcept>
 
+1698008000 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\entidades.cpp
+	"entidades.h"
+
+1698007948 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\entidades.h
+	"dominios.h"
+	<string>
+
+1698008780 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\main.cpp
+	<iostream>
+	"dominios.h"
+	"entidades.h"
+	"testes.h"
+
+1698008844 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\testes.h
+	"dominios.h"
+	"entidades.h"
+
+1698008906 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\testes.cpp
+	"testes.h"
+
+1698026593 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\entidades.cpp
+	"entidades.h"
+
+1698026595 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\entidades.h
+	"dominios.h"
+	<string>
+
+1698026482 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\dominios.h
+	<stdexcept>
+
+1698026644 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\main.cpp
+	<iostream>
+	"dominios.h"
+	"entidades.h"
+	"testes.h"
+
+1698027136 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\testes.h
+	"dominios.h"
+	"entidades.h"
+
+1698026675 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\testes.cpp
+	"testes.h"
+
+1698027047 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\dominios.cpp
+	"dominios.h"
+	"regex"
+

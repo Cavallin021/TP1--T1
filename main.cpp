@@ -1,3 +1,6 @@
+//---------------------------------------------------------------------
+// Inclusão de cabeçalho.
+
 #include <iostream>
 
 #include "dominios.h"
@@ -7,6 +10,10 @@
 using namespace std;
 
 int main(){
+
+//---------------------------------------------------------------------
+// Teste da classe Limite
+
     TULimite teste_limite;
 
     switch(teste_limite.run()){
@@ -15,6 +22,9 @@ int main(){
         case TULimite::FALHA  : cout << "FALHA" << endl;
                                 break;
     }
+
+//---------------------------------------------------------------------
+// Teste da classe Codigo
 
     TUCodigo teste_codigo;
 
@@ -25,6 +35,9 @@ int main(){
                                 break;
     }
 
+//---------------------------------------------------------------------
+// Teste da classe Email
+
     TUEmail teste_email;
 
     switch(teste_email.run()){
@@ -33,6 +46,9 @@ int main(){
         case TUEmail::FALHA  : cout << "FALHA" << endl;
                                 break;
     }
+
+//---------------------------------------------------------------------
+// Teste da classe Senha
 
     TUSenha teste_senha;
 
@@ -43,6 +59,9 @@ int main(){
                                 break;
     }
 
+//---------------------------------------------------------------------
+// Teste da classe Coluna
+
     TUColuna teste_coluna;
 
     switch(teste_coluna.run()){
@@ -51,6 +70,9 @@ int main(){
         case TUCodigo::FALHA  : cout << "FALHA" << endl;
                                 break;
     }
+
+//---------------------------------------------------------------------
+// Teste da classe Texto
 
     TUTexto teste_texto;
 
@@ -61,6 +83,9 @@ int main(){
                                 break;
     }
 
+//---------------------------------------------------------------------
+// Teste da classe Conta
+
     TUConta teste_conta;
 
     switch(teste_conta.run()){
@@ -70,6 +95,9 @@ int main(){
                                 break;
     }
 
+//---------------------------------------------------------------------
+// Teste da classe Quadro
+
     TUQuadro teste_quadro;
 
     switch(teste_quadro.run()){
@@ -78,6 +106,9 @@ int main(){
         case TUQuadro::FALHA  : cout << "FALHA" << endl;
                                 break;
     }
+
+//---------------------------------------------------------------------
+// Teste da classe Cartao
 
     TUCartao teste_cartao;
 

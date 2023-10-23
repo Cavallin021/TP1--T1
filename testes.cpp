@@ -1,4 +1,10 @@
+//---------------------------------------------------------------------
+// Inclusão de cabeçalho.
+
 #include "testes.h"
+
+//-----------------------------------------------------------------------
+// Implementações de métodos da classe TULimite
 
 void TULimite::setUp(){
     limite = new Limite();
@@ -40,6 +46,9 @@ int TULimite::run(){
     return estado;
 }
 
+//-----------------------------------------------------------------------
+// Implementações de métodos da classe TUCodigo
+
 void TUCodigo::setUp(){
     codigo = new Codigo();
     estado = SUCESSO;
@@ -79,6 +88,9 @@ int TUCodigo::run(){
     tearDown();
     return estado;
 }
+
+//-----------------------------------------------------------------------
+// Implementações de métodos da classe TUEmail
 
 void TUEmail::setUp(){
     email = new Email();
@@ -120,6 +132,9 @@ int TUEmail::run(){
     return estado;
 };
 
+//-----------------------------------------------------------------------
+// Implementações de métodos da classe TUSenha
+
 void TUSenha::setUp(){
     senha = new Senha();
     estado = SUCESSO;
@@ -160,6 +175,9 @@ int TUSenha::run(){
     return estado;
 };
 
+//-----------------------------------------------------------------------
+// Implementações de métodos da classe TUColuna
+
 void TUColuna::setUp(){
     coluna = new Coluna();
     estado = SUCESSO;
@@ -198,6 +216,9 @@ int TUColuna::run(){
     tearDown();
     return estado;
 };
+
+//-----------------------------------------------------------------------
+// Implementações de métodos da classe TUTexto
 
 void TUTexto::setUp(){
     texto = new Texto();
@@ -238,6 +259,9 @@ int TUTexto::run(){
     tearDown();
     return estado;
 };
+
+//-----------------------------------------------------------------------
+// Implementações de métodos da classe TUConta
 
 void TUConta::setUp(){
     conta = new Conta();
@@ -287,6 +311,9 @@ int TUConta::run(){
     tearDown();
     return estado;
 }
+
+//-----------------------------------------------------------------------
+// Implementações de métodos da classe TUQuadro
 
 void TUQuadro::setUp(){
     quadro = new Quadro();
@@ -347,6 +374,9 @@ int TUQuadro::run(){
     tearDown();
     return estado;
 }
+
+//-----------------------------------------------------------------------
+// Implementações de métodos da classe TUCartao
 
 void TUCartao::setUp(){
     cartao = new Cartao();

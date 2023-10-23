@@ -1,10 +1,22 @@
+//---------------------------------------------------------------------
+// Estrutura de código para declaração de classe teste.
+
+//---------------------------------------------------------------------
+// Diretivas para evitar duplicação quando da inclusão de cabeçalho.
+
 #ifndef TESTES_H_INCLUDED
 #define TESTES_H_INCLUDED
+
+//---------------------------------------------------------------------
+// Inclusão de cabeçalho.
 
 #include "dominios.h"
 #include "entidades.h"
 
 using namespace std;
+
+//---------------------------------------------------------------------
+// Declaração da classe TULimite.
 
 class TULimite {
 private:
@@ -23,6 +35,9 @@ public:
     int run();
 };
 
+//---------------------------------------------------------------------
+// Declaração da classe TUCodigo.
+
 class TUCodigo {
 private:
     const string VALOR_VALIDO   = "JK30";
@@ -40,10 +55,13 @@ public:
     int run();
 };
 
+//---------------------------------------------------------------------
+// Declaração da classe TUEmail.
+
 class TUEmail {
 private:
-    const string VALOR_VALIDO   = "joao@gmail.com";
-    const string VALOR_INVALIDO = "joaovictor@.gmail.com";
+    const string VALOR_VALIDO   = "user@gmail.com";
+    const string VALOR_INVALIDO = "user@.";
     Email *email;
     int estado;
     void setUp();
@@ -56,6 +74,9 @@ public:
     const static int FALHA   = -1;
     int run();
 };
+
+//---------------------------------------------------------------------
+// Declaração da classe TUSenha.
 
 class TUSenha {
 private:
@@ -74,6 +95,9 @@ public:
     int run();
 };
 
+//---------------------------------------------------------------------
+// Declaração da classe TUColuna.
+
 class TUColuna {
 private:
     const string VALOR_VALIDO   = "EM EXECUCAO";
@@ -91,6 +115,9 @@ public:
     int run();
 };
 
+//---------------------------------------------------------------------
+// Declaração da classe TUTexto.
+
 class TUTexto {
 private:
     const string VALOR_VALIDO   = "Ddasdadeexto";
@@ -107,6 +134,9 @@ public:
     const static int FALHA   = -1;
     int run();
 };
+
+//---------------------------------------------------------------------
+// Declaração da classe TUConta.
 
 class TUConta {
 private:
@@ -126,6 +156,9 @@ public:
     const static int FALHA   = -1;
     int run();
 };
+
+//---------------------------------------------------------------------
+// Declaração da classe TUQuadro.
 
 class TUQuadro {
 private:
@@ -147,6 +180,9 @@ public:
     const static int FALHA   = -1;
     int run();
 };
+
+//---------------------------------------------------------------------
+// Declaração da classe TUCartao.
 
 class TUCartao {
 private:
