@@ -60,4 +60,31 @@ int main(){
         case TUTexto::FALHA  : cout << "FALHA" << endl;
                                 break;
     }
+
+    TUConta teste_conta;
+
+    switch(teste_conta.run()){
+        case TUConta::SUCESSO: cout << "SUCESSO" << endl;
+                                break;
+        case TUConta::FALHA  : cout << "FALHA" << endl;
+                                break;
+    }
+
+    TUQuadro teste_quadro;
+
+    switch(teste_quadro.run()){
+        case TUQuadro::SUCESSO: cout << "SUCESSO" << endl;
+                                break;
+        case TUQuadro::FALHA  : cout << "FALHA" << endl;
+                                break;
+    }
+
+    TUCartao teste_cartao;
+
+    switch(teste_cartao.run()){
+        case TUCartao::SUCESSO: cout << "SUCESSO" << endl;
+                                break;
+        case TUCartao::FALHA  : cout << "FALHA" << endl;
+                                break;
+    }
 };

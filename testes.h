@@ -42,8 +42,8 @@ public:
 
 class TUEmail {
 private:
-    const string VALOR_VALIDO   = "user@example.com";
-    const string VALOR_INVALIDO = "user.@example.com";
+    const string VALOR_VALIDO   = "joao@gmail.com";
+    const string VALOR_INVALIDO = "joaovictor@.gmail.com";
     Email *email;
     int estado;
     void setUp();
@@ -60,7 +60,7 @@ public:
 class TUSenha {
 private:
     const string VALOR_VALIDO   = "Jkj9.";
-    const string VALOR_INVALIDO = "Jk79$";
+    const string VALOR_INVALIDO = "JJ79.";
     Senha *senha;
     int estado;
     void setUp();
@@ -107,4 +107,66 @@ public:
     const static int FALHA   = -1;
     int run();
 };
-#endif
+
+class TUConta {
+private:
+    const Email EMAIL;
+    const Texto NOME;
+    const Senha SENHA;
+    Conta *conta;
+    int estado;
+    void setUp();
+    void tearDown();
+    void testarSetGetEmail();
+    void testarSetGetNome();
+    void testarSetGetSenha();
+
+public:
+    const static int SUCESSO =  0;
+    const static int FALHA   = -1;
+    int run();
+};
+
+class TUQuadro {
+private:
+    const Codigo CODIGO;
+    const Texto NOME;
+    const Texto DESCRICAO;
+    Limite LIMITE;
+    Quadro *quadro;
+    int estado;
+    void setUp();
+    void tearDown();
+    void testarSetGetCodigo();
+    void testarSetGetNome();
+    void testarSetGetDescricao();
+    void testarSetGetLimite();
+
+public:
+    const static int SUCESSO =  0;
+    const static int FALHA   = -1;
+    int run();
+};
+
+class TUCartao {
+private:
+    const Codigo CODIGO;
+    const Texto NOME;
+    const Texto DESCRICAO;
+    const Coluna COLUNA;
+    Cartao *cartao;
+    int estado;
+    void setUp();
+    void tearDown();
+    void testarSetGetCodigo();
+    void testarSetGetNome();
+    void testarSetGetDescricao();
+    void testarSetGetColuna();
+
+public:
+    const static int SUCESSO =  0;
+    const static int FALHA   = -1;
+    int run();
+};
+
+#endif // TESTES_H_INCLUDED
