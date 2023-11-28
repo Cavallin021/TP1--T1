@@ -1,121 +1,82 @@
-//---------------------------------------------------------------------
-// Inclusão de cabeçalho.
-
 #include <iostream>
 
 #include "dominios.h"
 #include "entidades.h"
 #include "testes.h"
+#include "Usuario.h"
+#include "Usuario.cpp"
+#include "database.h"
 
 using namespace std;
 
 int main(){
+     int escolha;
+     string validado;
+     Database db;
+     bool autenticado = false;
+     cout << "Bem vindo ao Kanban!\n";
+     while (!autenticado) {
+          cout << "1. Criar conta\n";
+          cout << "2. Autenticar\n";
+          cout << "3. Sair\n";
+          cout << "Escolha: ";
+          cin >> escolha;
+          cout << endl;
 
-//---------------------------------------------------------------------
-// Teste da classe Limite
+     switch (escolha) {
+          case 1:{
+          string nome,email,senha;
+          UsuarioImpl conta;
+          conta.criarConta(nome,email,senha);
+          break;
+          };
+          case 2:{
+          string email,senha;
+          UsuarioImpl conta;
+          if (conta.autenticar(email,senha)){
+               validado = email;
+               autenticado = true;
 
-    TULimite teste_limite;
+          };
+          break;
+          };
+          case 3:{
+          cout << "Saindo do programa...\n";
+          return 0;
+          };
+     };
+     };
+     while (autenticado){
+          cout << "1. Visualizar conta\n";
+          cout << "2. Editar conta\n";
+          cout << "3. Excluir conta\n";
+          cout << "4. Desconectar\n";
+          cout << "Escolha: ";
+          cin >> escolha;
+          cout << endl;
 
-    switch(teste_limite.run()){
-        case TULimite::SUCESSO: cout << "SUCESSO" << endl;
-                                break;
-        case TULimite::FALHA  : cout << "FALHA" << endl;
-                                break;
-    }
-
-//---------------------------------------------------------------------
-// Teste da classe Codigo
-
-    TUCodigo teste_codigo;
-
-    switch(teste_codigo.run()){
-        case TUCodigo::SUCESSO: cout << "SUCESSO" << endl;
-                                break;
-        case TUCodigo::FALHA  : cout << "FALHA" << endl;
-                                break;
-    }
-
-//---------------------------------------------------------------------
-// Teste da classe Email
-
-    TUEmail teste_email;
-
-    switch(teste_email.run()){
-        case TUEmail::SUCESSO: cout << "SUCESSO" << endl;
-                                break;
-        case TUEmail::FALHA  : cout << "FALHA" << endl;
-                                break;
-    }
-
-//---------------------------------------------------------------------
-// Teste da classe Senha
-
-    TUSenha teste_senha;
-
-    switch(teste_senha.run()){
-        case TUSenha::SUCESSO: cout << "SUCESSO" << endl;
-                                break;
-        case TUSenha::FALHA  : cout << "FALHA" << endl;
-                                break;
-    }
-
-//---------------------------------------------------------------------
-// Teste da classe Coluna
-
-    TUColuna teste_coluna;
-
-    switch(teste_coluna.run()){
-        case TUColuna::SUCESSO: cout << "SUCESSO" << endl;
-                                break;
-        case TUCodigo::FALHA  : cout << "FALHA" << endl;
-                                break;
-    }
-
-//---------------------------------------------------------------------
-// Teste da classe Texto
-
-    TUTexto teste_texto;
-
-    switch(teste_texto.run()){
-        case TUTexto::SUCESSO: cout << "SUCESSO" << endl;
-                                break;
-        case TUTexto::FALHA  : cout << "FALHA" << endl;
-                                break;
-    }
-
-//---------------------------------------------------------------------
-// Teste da classe Conta
-
-    TUConta teste_conta;
-
-    switch(teste_conta.run()){
-        case TUConta::SUCESSO: cout << "SUCESSO" << endl;
-                                break;
-        case TUConta::FALHA  : cout << "FALHA" << endl;
-                                break;
-    }
-
-//---------------------------------------------------------------------
-// Teste da classe Quadro
-
-    TUQuadro teste_quadro;
-
-    switch(teste_quadro.run()){
-        case TUQuadro::SUCESSO: cout << "SUCESSO" << endl;
-                                break;
-        case TUQuadro::FALHA  : cout << "FALHA" << endl;
-                                break;
-    }
-
-//---------------------------------------------------------------------
-// Teste da classe Cartao
-
-    TUCartao teste_cartao;
-
-    switch(teste_cartao.run()){
-        case TUCartao::SUCESSO: cout << "SUCESSO" << endl;
-                                break;
-        case TUCartao::FALHA  : cout << "FALHA" << endl;
-                                break;
-    }
+     switch (escolha) {
+          case 1:{
+               UsuarioImpl conta;
+               conta.visualizarConta(validado);
+          break;
+          };
+          case 2:{
+               UsuarioImpl conta;
+               if (conta.editarConta(validado)){
+                    break;
+               };
+          };
+          case 3:{
+               UsuarioImpl conta;
+               if (conta.excluirConta(validado)){
+                    autenticado = false;
+                    cout << "Conta excluida com sucesso!";
+               }
+          };
+          case 4:{
+               autenticado = false;
+          };
+     };
+};
 };

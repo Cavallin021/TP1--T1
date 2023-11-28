@@ -40,11 +40,14 @@
 	"dominios.h"
 	<string>
 
-1698008780 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\main.cpp
+1701178793 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\main.cpp
 	<iostream>
 	"dominios.h"
 	"entidades.h"
 	"testes.h"
+	"Usuario.h"
+	"Usuario.cpp"
+	"database.h"
 
 1698008844 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\testes.h
 	"dominios.h"
@@ -53,30 +56,29 @@
 1698008906 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\testes.cpp
 	"testes.h"
 
-1698026593 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\entidades.cpp
-	"entidades.h"
-
-1698026595 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\entidades.h
+1701179202 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\usuario.cpp
+	"Usuario.h"
 	"dominios.h"
+	<iostream>
+	"database.h"
+
+1701179181 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\usuario.h
 	<string>
 
-1698026482 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\dominios.h
-	<stdexcept>
-
-1698026644 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\main.cpp
+1701178864 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\usuario.cpp
+	"Usuario.h"
+	"dominios.h"
 	<iostream>
-	"dominios.h"
-	"entidades.h"
-	"testes.h"
+	"database.h"
 
-1698027136 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\testes.h
-	"dominios.h"
-	"entidades.h"
+1701176017 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\database.cpp
+	"database.h"
+	<iostream>
 
-1698026675 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\testes.cpp
-	"testes.h"
+1701174897 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\database.h
+	"sqlite3.h"
+	<string>
 
-1698027047 source:d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia - copia\dominios.cpp
-	"dominios.h"
-	"regex"
+1701127327 d:\família\.joão victor\tp1\trabalho 1 - cb\trabalho 1 - copia\sqlite3.h
+	<stdarg.h>
 
