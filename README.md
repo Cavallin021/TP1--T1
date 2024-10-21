@@ -1,2 +1,1 @@
-# Trabalho-1---TP1
-Trabalho 1 - Entrega dia 22/10
+Repositório referente ao trabalho realizado na matéria de técnicas de programação 1
